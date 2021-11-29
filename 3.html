@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class person{
+        constructor(name,age,gender,eye,hair){
+            this.name=name || ""
+            this.age=age || ""
+            this.gender=gender || "" 
+            this.eye=eye || ""
+            this.hair=hair || "" 
+            this.race=race || "" 
+        }
+        personName(){
+            return `${this.name}`;
+        }
+        personAge(){
+            return `${this.age}`;
+        }
+        personGender(){
+            return `${this.gender}`
+        }
+        personEye(){
+            return `${this.eye}`
+        }
+        personHair(){
+            return `${this.hair}`
+        }
+        personRace(){
+            return `${this.race}`
+        }
+    }
+    const details1=new person(Josh,22,M,Brown,Black,Indian);
+    const details2=new person(Hera,30,F,Blue,Brunette,Caucasian);
+    const details3=new person(Jennifer,18,F,Brown,Black,Mestizo);
+    
+</script>
+
+</html>

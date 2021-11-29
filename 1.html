@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body></body>
+<script>
+    class movie{
+        constructor(title,studio,rating){
+            this.title=title || ""
+            this.studio=studio || ""
+            this.rating=rating || "PG"  // || to set default value
+        }
+        movieTitle(){
+            return `${this.title}`;
+        }
+        movieStudio(){
+            return `${this.studio}`;
+        }
+        movieRating(){
+            return `${this.rating}`
+        }
+        get newMovie(){
+            return `${this.title} ${this.studio} ${this.rating}`;
+        }
+    }
+    
+    const movieb=new movie("Mission:Impossible","Paramount Pictures");
+    console.log(movieb.movieRating())
+
+    const movied=new movie("Casino Royale","Eon Productions","PG13");
+    console.log(movied.movieTitle(), movied.movieStudio(), movied.movieRating())
+
+    var mov=[{title:"Avengers",rating:"PG"},{title:"Mission:Impossible"},{title:"Casino Royale",rating:"PG13"}];
+    class movies{ 
+        getPG(mov){
+            const pgMov=new Movie(mov.length)
+            var arr=0;
+            for (var i=0;i<mov.length;i++); {
+                if (mov[i].rating.equals("PG")) {
+                    pgMov[arr]=mov[i];
+                    arr++;
+                }
+            }
+            return pgMov;
+            console.log(pgMov)
+        }
+    }
+    
+</script>
+</html>
